@@ -1,6 +1,12 @@
 function getRandomNumber(a, b) {
   return Math.floor(Math.random() * (b - a)) + a;
 }
-const stringLength = (str, maxLenght) => str.length <= maxLenght;
+function stringLengthMax (string, length) {
+  return string.length <= length;
+}
 
-export {getRandomNumber, stringLength};
+function stringLengthMin (string, length) {
+  return string.length >= length;
+}
+
+export {getRandomNumber, stringLengthMax, stringLengthMin};
